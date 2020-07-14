@@ -1,0 +1,16 @@
+name: Daily task
+
+on:
+  schedule:
+    - cron: "35 * * * *"
+
+jobs:
+  pr-title-check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - uses: dev-drprasad/delete-older-releases@v0.1.0
+        with:
+          keep_latest: 2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
