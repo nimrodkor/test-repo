@@ -14,3 +14,4 @@ jobs:
           keep_latest: 2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_DELETE_TAGS: true
