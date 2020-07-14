@@ -2,7 +2,7 @@ name: Daily task
 
 on:
   schedule:
-    - cron: "35 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   pr-title-check:
