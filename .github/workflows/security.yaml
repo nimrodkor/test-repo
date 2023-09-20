@@ -1,0 +1,19 @@
+name: Security
+
+on:
+  pull_request:
+
+jobs:
+  scan:
+    permissions:
+      contents: read
+      actions: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkov@v3
+      - name: Run checkov
+        uses: bridgecrewio/checkov-action
+        env:
+          ENABLE_SECRET_SCAN_ALL_FILES: TRUE
+        with:
+          framework: secrets
