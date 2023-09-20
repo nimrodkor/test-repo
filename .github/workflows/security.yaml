@@ -12,9 +12,10 @@ jobs:
       actions: read
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkov@v3
+      - name: Checkout repo
+        uses: actions/checkov@v3
       - name: Run checkov
-        uses: bridgecrewio/checkov-action@latest
+        uses: bridgecrewio/checkov-action@master
         env:
           ENABLE_SECRET_SCAN_ALL_FILES: TRUE
         with:
