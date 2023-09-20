@@ -3,7 +3,7 @@ name: Daily task
 on:
   push:
     branches:
-      - master
+      - master2
 
 jobs:
   pr-title-check:
