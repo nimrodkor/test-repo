@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkov@v3
       - name: Run checkov
-        uses: bridgecrewio/checkov-action
+        uses: bridgecrewio/checkov-action@latest
         env:
           ENABLE_SECRET_SCAN_ALL_FILES: TRUE
         with:
