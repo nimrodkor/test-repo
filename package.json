@@ -1,0 +1,9 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "Test repo for js parsing",
+  "main": "test.js",
+  "repository": "git@github.com:nimrodkor/test-repo.git",
+  "author": "Nimrod <nimrod@getbaz.com>",
+  "license": "MIT"
+}
